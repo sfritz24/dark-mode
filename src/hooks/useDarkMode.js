@@ -2,7 +2,6 @@ import useLocalStorage from './useLocalStorage';
 
 const useDarkMode = (key, initialValue) => {
     const [value, setValue] = useLocalStorage(key, initialValue);
-    console.log(value);
     const app = document.querySelector('.App')
     const toggleMode = e => {
         e.preventDefault();
